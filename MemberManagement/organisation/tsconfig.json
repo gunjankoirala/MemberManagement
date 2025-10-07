@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "allowImportingTsExtensions": true,
+    "baseUrl": "./",
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "noEmit": true,
+    "types": ["node"],
+    "paths": {
+      "@Service/*": ["src/service/*"],
+      "@GraphQl/*":["src/graphql/*"],
+      "@Database":["src/db/db.ts"],
+      "@Error":["src/utils/Error.ts"],
+      "@Schema":["drizzle/schema.ts"]
+    },
+  },
+
+  "include": ["src", "drizzle","drizzle.config.ts"]
+}
